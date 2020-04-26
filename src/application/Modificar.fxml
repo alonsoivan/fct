@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModificarController">
+   <children>
+      <DatePicker fx:id="dpFecha" layoutX="331.0" layoutY="242.0" prefHeight="39.0" prefWidth="193.0" style="-fx-font-size: 18px;" />
+      <TextField fx:id="tfCif" layoutX="64.0" layoutY="73.0" prefHeight="39.0" prefWidth="193.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="64.0" layoutY="36.0" prefHeight="27.0" prefWidth="28.0" text="CIF">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="64.0" layoutY="121.0" prefHeight="27.0" prefWidth="126.0" text="RAZÓN SOCIAL">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfRazon" layoutX="64.0" layoutY="159.0" prefHeight="39.0" prefWidth="193.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="64.0" layoutY="207.0" prefHeight="27.0" prefWidth="169.0" text="REGISTRO NOTARIAL">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfRegistro" layoutX="64.0" layoutY="243.0" prefHeight="39.0" prefWidth="193.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfSeguroImporte" layoutX="329.0" layoutY="157.0" prefHeight="39.0" prefWidth="193.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="331.0" layoutY="120.0" prefHeight="27.0" prefWidth="148.0" text="SEGURO IMPORTE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="35.0" prefHeight="27.0" prefWidth="230.0" text="SEGURO RESPONSABILIDAD">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfResponsabilidad" layoutX="330.0" layoutY="71.0" prefHeight="39.0" prefWidth="193.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="331.0" layoutY="206.0" prefHeight="27.0" prefWidth="213.0" text="FECHA HOMOLOGACIÓN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="365.0" layoutY="326.0" mnemonicParsing="false" onAction="#altaProveedor" text="CONFIRMAR">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="101.0" layoutY="327.0" mnemonicParsing="false" onAction="#cerrarVentana" text="CANCELAR">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

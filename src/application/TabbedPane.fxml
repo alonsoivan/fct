@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TabbedPaneController">
+  <tabs>
+    <Tab style="-fx-font-size: 18px;" text="SUBIR ARCHIVO">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="454.0" layoutY="454.0" mnemonicParsing="false" text="Subir">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btExaminar" layoutX="32.0" layoutY="454.0" mnemonicParsing="false" onAction="#buscarFichero" text="Examinar">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="labelFichero" layoutX="102.0" layoutY="210.0" text="ARRASTRA TUS ARCHIVOS AQUÍ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="344.0" layoutX="35.0" layoutY="55.0" onDragDropped="#DragDropped" onDragEntered="#DragEntered" onDragExited="#DragExited" onDragOver="#DragOver" opacity="0.54" stroke="#101161" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="481.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Rectangle>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab style="-fx-font-size: 18px;" text="PROVEEDORES">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="lvProveedores" layoutX="45.0" layoutY="69.0" onMouseClicked="#activarBotones" prefHeight="395.0" prefWidth="286.0" style="-fx-font-size: 18px;" />
+                  <Label layoutX="96.0" layoutY="29.0" text="CIF">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="188.0" layoutY="29.0" text="RAZÓN SOCIAL">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="TOP_CENTER" layoutX="389.0" layoutY="125.0" prefHeight="310.0" prefWidth="100.0" spacing="40.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#cargarListaProveedores" prefWidth="250.0" text="Refrescar">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btEliminar" disable="true" mnemonicParsing="false" onAction="#eliminarProveedor" prefWidth="250.0" text="Eliminar">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btModificar" disable="true" mnemonicParsing="false" onAction="#modificarProveedor" prefWidth="250.0" text="Modificar">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#anadirProveedor" prefWidth="250.0" text="Añadir">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
